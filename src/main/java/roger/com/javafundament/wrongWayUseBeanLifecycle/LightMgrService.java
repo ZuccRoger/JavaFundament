@@ -1,4 +1,4 @@
-package roger.com.javafundament.service;
+package roger.com.javafundament.wrongWayUseBeanLifecycle;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,12 +8,12 @@ import org.springframework.stereotype.Component;
  * @author: 骆佳俊
  * @date: 2022/4/30 5:15 PM
  */
-@Component
+// @Component
 public class LightMgrService {
-  @Autowired private LightService lightService;
-
-  @Test
-  public void LightMgrService() {
-    lightService.check();
-  }
+  //  @Autowired private LightService lightService;
+  //
+  //  @Test
+  //  public void LightMgrService() {
+  //    lightService.check();
+  //  }
 }

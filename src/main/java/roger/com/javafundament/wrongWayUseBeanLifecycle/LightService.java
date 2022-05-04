@@ -1,4 +1,4 @@
-package roger.com.javafundament.service;
+package roger.com.javafundament.wrongWayUseBeanLifecycle;
 
 import org.springframework.stereotype.Service;
 
@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
  * @author: 骆佳俊
  * @date: 2022/4/30 5:15 PM
  */
-@Service
+//@Service
 public class LightService {
   public void start() {
     System.out.println("turn on all lights");
