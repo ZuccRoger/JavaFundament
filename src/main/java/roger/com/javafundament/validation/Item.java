@@ -14,13 +14,20 @@ import java.util.List;
  */
 @Data
 public class Item {
-  @NotNull(message = "id不能为空")
+  @NotNull(
+      message = "id不能为空",
+      groups = {Update.class})
   @Min(value = 1, message = "id必须为正整数")
   private Long id;
 
   @Valid
-  @NotNull(message = "props不能为空")
-  @Size(min = 1, message = "props至少要有一个自定义属性")
+  @NotNull(
+      message = "props不能为空",
+      groups = {Save.class, Update.class})
+  @Size(
+      min = 1,
+      message = "props至少要有一个自定义属性",
+      groups = {Save.class, Update.class})
   private List<Prop> props;
 
   /** 保存的时候校验分组 */
