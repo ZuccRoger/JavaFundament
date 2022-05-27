@@ -1,0 +1,5 @@
+server:
+  port: 9000
+  tomcat:
+    threads:
+      max: 1 #最大工作线程数量
